@@ -36,8 +36,6 @@ deployment.extensions/mykube-nginx scaled
 #POD 
 
 [root@node1 ~]# kubectl get deployments
-
 NAME           READY   UP-TO-DATE   AVAILABLE   AGE
 mykube-nginx   20/20   20           20          21m
-[root@node1 ~]# 
 
