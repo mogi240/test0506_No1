@@ -3,6 +3,7 @@
 
 git clone https://github.com/mogi240/test0506_No1.git
 
+#docker 빌드
 root@u1:~/test0506_No1# docker build --rm -t mogi240/my-nginx .
 Sending build context to Docker daemon  70.14kB
 Step 1/8 : FROM ubuntu
@@ -33,7 +34,8 @@ Successfully built 31580fa88047
 Successfully tagged mogi240/my-nginx:latest
 
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#docker run
 docker run -d --rm --name n1 -p 80:80 mogi240/my-nginx
 9ad79ac7b05747aefbc45276b3ca9bb748c1ee1c3f365b4cd7ad4736920437c9
 
@@ -44,7 +46,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#docker 웹페이지 접속
 root@u1:~/test0506_No1# curl http://localhost:80
 <!DOCTYPE html>
 <html>
