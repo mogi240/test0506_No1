@@ -114,5 +114,6 @@ deployment.extensions/mykube-nginx scaled
 
 [root@node1 ~]# kubectl get deployments
 NAME           READY   UP-TO-DATE   AVAILABLE   AGE
-mykube-nginx   0/1     1            0           3m21s
-nginx          10/20   20           10          7h42m
+mykube-nginx   20/20   20           20          21m
+[root@node1 ~]# 
+
