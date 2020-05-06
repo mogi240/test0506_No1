@@ -29,10 +29,12 @@ kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in 
 deployment.apps/mykube-nginx created
 
 #replicas=20 변경
+
 [root@node1 ~]# kubectl scale deployment mykube-nginx --replicas=20
 deployment.extensions/mykube-nginx scaled
 
 #POD 
+
 [root@node1 ~]# kubectl get deployments
 NAME           READY   UP-TO-DATE   AVAILABLE   AGE
 mykube-nginx   20/20   20           20          21m
